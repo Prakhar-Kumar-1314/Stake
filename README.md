@@ -1,4 +1,4 @@
-# Stake CLone
+# Stake Clone
 
 - building a stake clone with 3 games
 - mines
