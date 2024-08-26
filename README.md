@@ -1,4 +1,8 @@
-# Stake
+# Stake CLone
 
-- I will score more than Pratyush this time. 
-- Then I will trash talk the tall ass nigga
+- building a stake clone with 3 games
+- mines
+- plinko
+- blackjack
+
+- backend heavy application
