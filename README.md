@@ -5,4 +5,4 @@
 - plinko - preetham r sanji
 - blackjack - pratyush sinha
 
-- backend heavy application
+- backend intensive application
