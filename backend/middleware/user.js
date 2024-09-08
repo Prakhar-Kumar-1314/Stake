@@ -32,14 +32,14 @@ const userExistsSignUp = async (req, res, next) => {
   try {
     const user = await User.findOne({ email });
     if (user) {
-      res.status(400).json({
-        messgae: "User already exists",
+      return res.status(400).json({
+        message: "User already exists",
       });
     }
-    next();
+    next(); // Proceed to the next middleware if the user doesn't exist
   } catch (err) {
-    res.status(400).json({
-      error: err.message,
+    res.status(500).json({
+      error: err.message, // Use 500 for server error
     });
   }
 };
@@ -81,4 +81,8 @@ const userValidateSignin = (req, res, next) => {
       error: err.message,
     });
   }
+};
+
+module.exports = {
+  userValidation, userValidateSignin, userExistsLogin, userExistsSignUp
 };
